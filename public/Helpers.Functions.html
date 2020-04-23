@@ -6,7 +6,7 @@
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
-    <script src="https://unpkg.com/flipclock@0.10.5/dist/flipclock.min.js"></script>
+    <script src="https://unpkg.com/flipclock@0.11.0/dist/flipclock.min.js"></script>
     
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/app.css">
-    <link type="text/css" rel="stylesheet" href="https://unpkg.com/flipclock@0.10.5/dist/flipclock.css">
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/flipclock@0.11.0/dist/flipclock.css">
 </head>
 
 <body class="namespace:functions">
@@ -1693,170 +1693,6 @@ to <code>after</code> and the subsequent value is returned.</p>
 
 
 <div class="description">
-    <p>Determines if a value is <code>null</code>.</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<div class="card">
-    <table class="table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            <tr>
-                
-                    <td class="name"><code>value</code></td>
-                
-
-                <td class="type">
-                
-                    
-<span class="param-type">*</span>
-
-
-                
-                </td>
-
-                
-
-                
-
-                <td class="description last"><p>The value to check.</p></td>
-            </tr>
-
-        
-        </tbody>
-    </table>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Helpers_Functions.js.html">Helpers/Functions.js</a>, <a href="Helpers_Functions.js.html#line164">line 164</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>Returns <code>true</code> if the value is a <code>null</code>.</li>
-</ul>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        </div>
-        
-        <div class="mb-5">
-            
-
-    
-
-    
-    <h4 class="name" id=".isNull"><span class="type-signature">(static) </span>isNull<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
     <p>Determines if a value is <code>undefined</code>.</p>
 </div>
 
@@ -2013,7 +1849,7 @@ to <code>after</code> and the subsequent value is returned.</p>
     
 
     
-    <h4 class="name" id=".isObject"><span class="type-signature">(static) </span>isObject<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id=".isNull"><span class="type-signature">(static) </span>isNull<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
     
 
     
@@ -2021,7 +1857,7 @@ to <code>after</code> and the subsequent value is returned.</p>
 
 
 <div class="description">
-    <p>Determines if a value is an object.</p>
+    <p>Determines if a value is <code>null</code>.</p>
 </div>
 
 
@@ -2115,7 +1951,7 @@ to <code>after</code> and the subsequent value is returned.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Helpers_Functions.js.html">Helpers/Functions.js</a>, <a href="Helpers_Functions.js.html#line224">line 224</a>
+        <a href="Helpers_Functions.js.html">Helpers/Functions.js</a>, <a href="Helpers_Functions.js.html#line164">line 164</a>
     </li></ul></dd>
     
 
@@ -2145,7 +1981,171 @@ to <code>after</code> and the subsequent value is returned.</p>
         
 <div class="param-desc">
     <ul>
-<li>Returns <code>true</code> if the value is an object.</li>
+<li>Returns <code>true</code> if the value is a <code>null</code>.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        </div>
+        
+        <div class="mb-5">
+            
+
+    
+
+    
+    <h4 class="name" id=".isObject"><span class="type-signature">(static) </span>isObject<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Determines if a value is a number.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<div class="card">
+    <table class="table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            <tr>
+                
+                    <td class="name"><code>value</code></td>
+                
+
+                <td class="type">
+                
+                    
+<span class="param-type">*</span>
+
+
+                
+                </td>
+
+                
+
+                
+
+                <td class="description last"><p>The value to check.</p></td>
+            </tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Helpers_Functions.js.html">Helpers/Functions.js</a>, <a href="Helpers_Functions.js.html#line251">line 251</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Returns <code>true</code> if the value is a number.</li>
 </ul>
 </div>
 
@@ -2349,7 +2349,7 @@ to <code>after</code> and the subsequent value is returned.</p>
 
 
 <div class="description">
-    <p>Determines if a value is a number.</p>
+    <p>Determines if a value is an object.</p>
 </div>
 
 
@@ -2443,7 +2443,7 @@ to <code>after</code> and the subsequent value is returned.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Helpers_Functions.js.html">Helpers/Functions.js</a>, <a href="Helpers_Functions.js.html#line251">line 251</a>
+        <a href="Helpers_Functions.js.html">Helpers/Functions.js</a>, <a href="Helpers_Functions.js.html#line224">line 224</a>
     </li></ul></dd>
     
 
@@ -2473,171 +2473,7 @@ to <code>after</code> and the subsequent value is returned.</p>
         
 <div class="param-desc">
     <ul>
-<li>Returns <code>true</code> if the value is a number.</li>
-</ul>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        </div>
-        
-        <div class="mb-5">
-            
-
-    
-
-    
-    <h4 class="name" id=".isString"><span class="type-signature">(static) </span>isString<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>Determines if a value is a string.</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<div class="card">
-    <table class="table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            <tr>
-                
-                    <td class="name"><code>value</code></td>
-                
-
-                <td class="type">
-                
-                    
-<span class="param-type">*</span>
-
-
-                
-                </td>
-
-                
-
-                
-
-                <td class="description last"><p>The value to check.</p></td>
-            </tr>
-
-        
-        </tbody>
-    </table>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Helpers_Functions.js.html">Helpers/Functions.js</a>, <a href="Helpers_Functions.js.html#line200">line 200</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>Returns <code>true</code> if the value is a string.</li>
+<li>Returns <code>true</code> if the value is an object.</li>
 </ul>
 </div>
 
@@ -2772,6 +2608,170 @@ to <code>after</code> and the subsequent value is returned.</p>
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
         <a href="Helpers_Functions.js.html">Helpers/Functions.js</a>, <a href="Helpers_Functions.js.html#line212">line 212</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Returns <code>true</code> if the value is a string.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        </div>
+        
+        <div class="mb-5">
+            
+
+    
+
+    
+    <h4 class="name" id=".isString"><span class="type-signature">(static) </span>isString<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Determines if a value is a string.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<div class="card">
+    <table class="table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            <tr>
+                
+                    <td class="name"><code>value</code></td>
+                
+
+                <td class="type">
+                
+                    
+<span class="param-type">*</span>
+
+
+                
+                </td>
+
+                
+
+                
+
+                <td class="description last"><p>The value to check.</p></td>
+            </tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Helpers_Functions.js.html">Helpers/Functions.js</a>, <a href="Helpers_Functions.js.html#line200">line 200</a>
     </li></ul></dd>
     
 
@@ -3169,7 +3169,7 @@ to <code>after</code> and the subsequent value is returned.</p>
 
 
 <div class="description">
-    <p>Returns <code>true</code> if <code>undefined or</code>null`.</p>
+    <p>Returns <code>true</code> if <code>undefined or </code>null`.</p>
 </div>
 
 
@@ -3293,7 +3293,7 @@ to <code>after</code> and the subsequent value is returned.</p>
         
 <div class="param-desc">
     <ul>
-<li><code>true</code> if <code>undefined or</code>null`.</li>
+<li><code>true</code> if <code>undefined or </code>null`.</li>
 </ul>
 </div>
 
@@ -3663,7 +3663,7 @@ to <code>after</code> and the subsequent value is returned.</p>
     </div>
 
     <footer class="text-center p-4 pt-3">
-        &copy; 2019 Justin Kimbrell - Version 0.10.5
+        &copy; 2020 Justin Kimbrell - Version 0.11.0
     </footer>
 </div>
 

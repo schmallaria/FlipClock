@@ -6,7 +6,7 @@
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
-    <script src="https://unpkg.com/flipclock@0.10.5/dist/flipclock.min.js"></script>
+    <script src="https://unpkg.com/flipclock@0.11.0/dist/flipclock.min.js"></script>
     
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/app.css">
-    <link type="text/css" rel="stylesheet" href="https://unpkg.com/flipclock@0.10.5/dist/flipclock.css">
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/flipclock@0.11.0/dist/flipclock.css">
 </head>
 
 <body class="tutorial:creatingexamples">
@@ -57,31 +57,43 @@
     <article>
         
 
-        <h1>Creating Examples</h1><p>We try to provide a lot of examples. A lot of issues get created due to a lack
+        <h1>Creating Examples</h1>
+<p>We try to provide a lot of examples. A lot of issues get created due to a lack
 of examples and demonstration. If you run into a scenario that you think should
 be an example, read the following steps:</p>
 <ol>
-<li><a href="https://github.com/objectivehtml/flipclock">Fork the repo on Github</a></li>
-<li>Create a new directory in the <code>./docs/examples</code>. Follow the existing kebab
-case format. Example <code>my-example-name</code>.</li>
-<li>Within the newly created directory, be sure to include two files:
+<li>
+<p><a href="https://github.com/objectivehtml/flipclock">Fork the repo on Github</a></p>
+</li>
+<li>
+<p>Create a new directory in the <code>./docs/examples</code>. Follow the existing kebab
+case format. Example <code>my-example-name</code>.</p>
+</li>
+<li>
+<p>Within the newly created directory, be sure to include two files:
 <code>my-example-name.json</code> and <code>my-example-name.md</code>. The name of the files must
-match parent directory exactly.</li>
-<li><p><code>my-example-name.md</code> should have a description, and the code to run the
+match parent directory exactly.</p>
+</li>
+<li>
+<p><code>my-example-name.md</code> should have a description, and the code to run the
 example. The following is some code of how an example could look.</p>
-<pre class="prettyprint source"><code>This examples shows a Faces.TwelveHourClock without seconds.
+<pre><code>This examples shows a Faces.TwelveHourClock without seconds.
 
-&lt;div class=&quot;mt-5 clock&quot;>&lt;/div>
+&lt;div class=&quot;mt-5 clock&quot;&gt;&lt;/div&gt;
 
-&lt;script type=&quot;text/javascript&quot;>
+&lt;script type=&quot;text/javascript&quot;&gt;
     const el = document.querySelector('.clock');
 
     const clock = new FlipClock(el, {
         face: 'TwelveHourClock'
     });
-&lt;/script></code></pre></li>
-<li>Commit your changes with some quality comments and description of what you
-just added. And then put in a pull request.</li>
+&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>Commit your changes with some quality comments and description of what you
+just added. And then put in a pull request.</p>
+</li>
 </ol>
     </article>
 
@@ -92,7 +104,7 @@ just added. And then put in a pull request.</li>
     </div>
 
     <footer class="text-center p-4 pt-3">
-        &copy; 2019 Justin Kimbrell - Version 0.10.5
+        &copy; 2020 Justin Kimbrell - Version 0.11.0
     </footer>
 </div>
 

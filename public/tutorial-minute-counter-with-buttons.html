@@ -6,7 +6,7 @@
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
-    <script src="https://unpkg.com/flipclock@0.10.5/dist/flipclock.min.js"></script>
+    <script src="https://unpkg.com/flipclock@0.11.0/dist/flipclock.min.js"></script>
     
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/app.css">
-    <link type="text/css" rel="stylesheet" href="https://unpkg.com/flipclock@0.10.5/dist/flipclock.css">
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/flipclock@0.11.0/dist/flipclock.css">
 </head>
 
 <body class="tutorial:minutecounterwithbuttons">
@@ -61,40 +61,37 @@
 
         <p>This is an example of the <a href="Faces.MinuteCounter.html"><code>Faces.MinuteCounter</code></a> that counts up 5 seconds and stops.</p>
 <div class="clock mt-5 mb-3"></div>
-
 <p class="message"></p>
-
-<button class="btn btn-primary start">Start Clock</button>
-<button class="btn btn-danger stop">Stop Clock</button>
-
+<p><button class="btn btn-primary start">Start Clock</button>
+<button class="btn btn-danger stop">Stop Clock</button></p>
 <script type="text/javascript">
-    var el = document.querySelector('.clock');
+	var el = document.querySelector('.clock');
 
-    function date(offset = 0) {
-        return new Date(new Date().setSeconds(new Date().getSeconds() + offset));
-    }
+	function date(offset = 0) {
+		return new Date(new Date().setSeconds(new Date().getSeconds() + offset));
+	}
 
-    var clock = new FlipClock(el, () => date(), {
-        face: 'MinuteCounter',
-        autoStart: false,
-        stopAt: 5
-    });
+	var clock = new FlipClock(el, () => date(), {
+		face: 'MinuteCounter',
+		autoStart: false,
+		stopAt: 5
+	});
 
-    clock.on('start', () => {
-        document.querySelector('.message').innerHTML = 'Clock started!';
-    });
+	clock.on('start', () => {
+		document.querySelector('.message').innerHTML = 'Clock started!';
+	});
 
-    clock.on('stop', () => {
-        document.querySelector('.message').innerHTML = 'Clock stopped!';
-    });
+	clock.on('stop', () => {
+		document.querySelector('.message').innerHTML = 'Clock stopped!';
+	});
 
-    document.querySelector('.start').addEventListener('click', event => {
-        clock.timer.isStopped && clock.start();
-    });
+	document.querySelector('.start').addEventListener('click', event => {
+		clock.timer.isStopped && clock.start();
+	});
 
-    document.querySelector('.stop').addEventListener('click', event => {
-        clock.timer.isRunning && clock.stop();
-    });
+	document.querySelector('.stop').addEventListener('click', event => {
+		clock.timer.isRunning && clock.stop();
+	});
 </script>
     </article>
 
@@ -105,7 +102,7 @@
     </div>
 
     <footer class="text-center p-4 pt-3">
-        &copy; 2019 Justin Kimbrell - Version 0.10.5
+        &copy; 2020 Justin Kimbrell - Version 0.11.0
     </footer>
 </div>
 

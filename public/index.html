@@ -6,7 +6,7 @@
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
-    <script src="https://unpkg.com/flipclock@0.10.5/dist/flipclock.min.js"></script>
+    <script src="https://unpkg.com/flipclock@0.11.0/dist/flipclock.min.js"></script>
     
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/app.css">
-    <link type="text/css" rel="stylesheet" href="https://unpkg.com/flipclock@0.10.5/dist/flipclock.css">
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/flipclock@0.11.0/dist/flipclock.css">
 </head>
 
 <body class="home">
@@ -28,7 +28,7 @@
 <header class="hero mb-4">
     <div class="container-fluid">
         <h1><a href="./index.html">FlipClock.js</a></h1>
-        <div class="version">v0.10.5</div>    
+        <div class="version">v0.11.0</div>    
         <div class="clock d-inline-block my-5 py-5 mx-auto"></div>
 
         <script>
@@ -86,19 +86,24 @@
 
 
     <section>
-        <article><h1>FlipClock.js</h1><h2>Installation</h2><p>FlipClock is designed to be used a UMD or ES6 module that can be required and
+        <article><h1>FlipClock.js</h1>
+<h2>Installation</h2>
+<p>FlipClock is designed to be used a UMD or ES6 module that can be required and
 imported. NPM is the primary package manager. The CDN exposes <code>FlipClock</code> as a
 global variable.</p>
-<h3>NPM</h3><p><code>npm install flipclock --save</code></p>
-<h3>CDN</h3><p><strong>Specific version</strong></p>
+<h3>NPM</h3>
+<p><code>npm install flipclock --save</code></p>
+<h3>CDN</h3>
+<p><strong>Specific version</strong></p>
 <p><code>https://cdn.jsdelivr.net/npm/flipclock@&lt;?js= pkg.version ?&gt;/dist/flipclock.min.js</code></p>
 <p><strong>Always use latest version</strong></p>
 <p><code>https://cdn.jsdelivr.net/npm/flipclock/dist/flipclock.min.js</code></p>
-<p><a href="https://github.com/objectivehtml/FlipClock/archive/master.zip" class="btn btn-primary">
-    <i class="fa fa-download"></i> Download .ZIP
-</a></p>
+<a href="https://github.com/objectivehtml/FlipClock/archive/master.zip" class="btn btn-primary">
+	<i class="fa fa-download"></i> Download .ZIP
+</a>
 <hr>
-<h3>New in v1.0</h3><p>FlipClock originally was developed an example library for a computer science class that I taught. I never actually thought people would use it, let alone imagine how people would use it. It's been a long time coming, but FlipClock.js has been rewritten for a modern age with no dependencies.</p>
+<h3>New in v1.0</h3>
+<p>FlipClock originally was developed an example library for a computer science class that I taught. I never actually thought people would use it, let alone imagine how people would use it. It's been a long time coming, but FlipClock.js has been rewritten for a modern age with no dependencies.</p>
 <ul>
 <li>Rewritten ES6 Syntax</li>
 <li>No dependencies, pure vanilla JS</li>
@@ -112,21 +117,27 @@ global variable.</p>
 <li>Unit testing with Jest</li>
 </ul>
 <hr>
-<h3>Basic Usage</h3><pre class="prettyprint source"><code>import FlipClock from 'flipclock';
+<h3>Basic Usage</h3>
+<pre><code>import FlipClock from 'flipclock';
 
 const el = document.querySelector('.clock');
 
 const clock = new FlipClock(el, new Date, {
-    face: 'HourCounter'
-});</code></pre><hr>
-<h3>Collaborators</h3><ul>
+	face: 'HourCounter'
+});
+</code></pre>
+<hr>
+<h3>Collaborators</h3>
+<ul>
 <li><a href="https://github.com/objectivehtml">Justin Kimbrell</a></li>
 <li><a href="https://github.com/brianespinosa">Brian Espinosa</a></li>
 </ul>
 <hr>
-<h3>Special Credit</h3><p>Big thanks to all the examples on the Internet. But in particular, a huge thanks goes out to Adem Ilter who built <a href="http://codepen.io/ademilter/pen/czIGo">this example</a>, which provided the best animation and least amount of code to prove the concept.</p>
+<h3>Special Credit</h3>
+<p>Big thanks to all the examples on the Internet. But in particular, a huge thanks goes out to Adem Ilter who built <a href="http://codepen.io/ademilter/pen/czIGo">this example</a>, which provided the best animation and least amount of code to prove the concept.</p>
 <hr>
-<h3>License</h3><p><a href="./license.txt">Licensed under MIT</a></p></article>
+<h3>License</h3>
+<p><a href="./license.txt">Licensed under MIT</a></p></article>
     </section>
 
 
@@ -138,7 +149,7 @@ const clock = new FlipClock(el, new Date, {
     </div>
 
     <footer class="text-center p-4 pt-3">
-        &copy; 2019 Justin Kimbrell - Version 0.10.5
+        &copy; 2020 Justin Kimbrell - Version 0.11.0
     </footer>
 </div>
 
